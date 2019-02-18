@@ -110,7 +110,7 @@ footer{
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 /*movieページの背景画像設定*/
@@ -119,7 +119,7 @@ footer{
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 iframe{
@@ -148,6 +148,16 @@ iframe{
   }
  
   #index{
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  #music{
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  #movie{
     width: 100vw;
     height: 100vh;
   }
