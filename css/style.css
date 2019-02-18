@@ -1,0 +1,155 @@
+@charset "utf-8";
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*ここからbody要素の設定*/
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc;
+  color: #333333;
+  font-size: 15px;
+  line-height:2;
+}
+/*既定のスタイルのリセット*/
+p,h1,h2,h3,h4,h5,h6{
+  margin: 20px;
+}
+
+h1{
+  font-family: 'Bitter',serif;
+  font-size: 36px;
+  border-bottom: 1px solid #cccccc;
+}
+
+img {
+  vertical-align:bottom;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+/*リンク要素の設定*/
+a{
+  color: #3583aa;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #788d98;
+}
+
+#wrap{
+  clear: both;
+  background-color: #ffffff;
+  margin-top: 50px;
+}
+
+/*headerのスタイルを指定*/
+header{
+  width: 960x;
+  height:290px;
+  margin: 0 0 0 0 ;
+}
+
+/*logoのスタイル設定*/
+.logo{
+  margin-top: 60px;
+}
+
+/*グローバルナビのスタイル設定*/
+.global-nav{
+  margin: 0px auto 0 10px;  
+}
+
+/*グローバルナビのリストのスタイル設定*/
+.global-nav li{
+  float: left;
+  list-style: none;
+  margin: 0 20px;
+  font-size: 20px;
+  font-family: 'Bitter', serif;
+}
+
+
+/*グローバルナビ内のリンクの文字色設定*/
+.global-nav li a{
+  color: #ffffff;
+}
+
+/*グローバルナビのhover設定*/
+.global-nav li a:hover{
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 3px;
+}
+
+/*フッターの設定*/
+footer{
+  text-align: right;
+  color: #ffffff;
+  padding: 20px 10px;
+  background-color: #767676;
+}
+
+/*トップページの背景画像設定*/
+#index{
+  background-image: url(../images/po-16.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*musicページの背景画像設定*/
+#music{
+  background-image: url(../images/effecter-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+/*movieページの背景画像設定*/
+#movie{
+  background-image: url(../images/op-z-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+iframe{
+  margin: 0 20px;
+}
+
+@media screen and (max-width:600px){
+/*画面サイズが600px以下の場合に適用*/
+  body{
+    font-size: 3.6vw;
+  }
+
+  header{
+    width: auto;
+    margin: 0.5px;
+  }
+  
+  .logo{
+    float: none;
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  .logo img{
+    max-width: 100%;
+  }
+ 
+  #index{
+    width: 100vw;
+    height: 100vh;
+  }
+ 
+}
